@@ -6,4 +6,9 @@ CREATE TABLE my_info (
     nationality VARCHAR9(255),
     city    VARCHAR(255)
 
+
 );
+-- deleting database table
+DROP TABLE my_info;
+
+
