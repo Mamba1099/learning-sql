@@ -6,3 +6,6 @@ SHOW DATABASES;
 
 -- selecting a database
 USE my_db;
+
+-- deleting database
+DROP DATABASE my_db;
