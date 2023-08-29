@@ -11,4 +11,8 @@ CREATE TABLE my_info (
 -- deleting database table
 DROP TABLE my_info;
 
+-- delete data inside table but not the database
+TRUNCATE TABLE my_info;
+
+--
 
