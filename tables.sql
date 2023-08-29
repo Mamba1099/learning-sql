@@ -14,7 +14,13 @@ DROP TABLE my_info;
 -- delete data inside table but not the database
 TRUNCATE TABLE my_info;
 
---  adding more datat to datatbase
+--  adding more data to datatbase
 ALTER TABLE my_info
 ADD Email VARCHAR(255);
+
+-- deleting colmn in a table
+ALTER TABLE my_info
+DROP COLUMN Email;
+
+
 
