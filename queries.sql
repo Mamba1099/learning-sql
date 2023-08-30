@@ -66,3 +66,29 @@ SELECT * FROM Employees WHERE salary > 55000;
 -- |  7 | david.miller123@outlook.com |  57000 |
 -- |  9 | samuel.green55@gmail.com    |  59000 |
 -- +----+-----------------------------+--------+
+
+-- update existing record 
+UPDATE Employees
+SET email = 'smith.sarah@email.net', salary = 7500
+WHERE Id = 2;
+
+SELECT * FROM Employees WHERE Id = 2;
+
+-- +----+-----------------------+--------+
+-- | Id | email                 | salary |
+-- +----+-----------------------+--------+
+-- |  2 | smith.sarah@email.net |   7500 |
+-- +----+-----------------------+--------+
+
+-- updating a group of data
+UPDATE Employees
+SET salary = 60000
+WHERE salary > 55000;
+
+-- +----+-----------------------------+--------+
+-- | Id | email                       | salary |
+-- +----+-----------------------------+--------+
+-- |  5 | robert_1987@yahoo.co.uk     |  60000 |
+-- |  7 | david.miller123@outlook.com |  60000 |
+-- |  9 | samuel.green55@gmail.com    |  60000 |
+-- +----+-----------------------------+--------+
