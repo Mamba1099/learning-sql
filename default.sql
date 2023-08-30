@@ -32,3 +32,14 @@ ALTER city SET DEFAULT 'Nairobi';
 -- | ID    | int          | NO   |     | NULL    |       |
 -- | City  | varchar(255) | YES  |     | Nairobi |       |
 -- +-------+--------------+------+-----+---------+-------+
+
+-- dropping a default value that was set
+ALTER TABLE info 
+ALTER city DROP DEFAULT;
+
+-- +-------+--------------+------+-----+---------+-------+
+-- | Field | Type         | Null | Key | Default | Extra |
+-- +-------+--------------+------+-----+---------+-------+
+-- | ID    | int          | NO   |     | NULL    |       |
+-- | City  | varchar(255) | YES  |     | NULL    |       |
+-- +-------+--------------+------+-----+---------+-------+
