@@ -55,3 +55,14 @@ SELECT * FROM Employees WHERE email = 'lisa-brown34@emailprovider.net';
 -- |  8 | lisa-brown34@emailprovider.net |  51000 |
 -- +----+--------------------------------+--------+
 
+-- selecting data from group by id
+SELECT * FROM Employees WHERE salary > 55000; 
+
+-- +----+-----------------------------+--------+
+-- | Id | email                       | salary |
+-- +----+-----------------------------+--------+
+-- |  2 | sarah.smith@email.net       |  60000 |
+-- |  5 | robert_1987@yahoo.co.uk     |  62000 |
+-- |  7 | david.miller123@outlook.com |  57000 |
+-- |  9 | samuel.green55@gmail.com    |  59000 |
+-- +----+-----------------------------+--------+
